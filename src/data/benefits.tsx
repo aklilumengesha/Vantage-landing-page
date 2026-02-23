@@ -27,7 +27,7 @@ export const benefits: IBenefit[] = [
     },
     {
         title: "Seamless Investing",
-        description: "Start building wealth today, no financial degree required. Vantage makes investing accessible and straightforward.",
+        description: "Start building wealth today, no financial degree required. Vintage makes investing accessible and straightforward.",
         bullets: [
             {
                 title: "Micro-Investing",
