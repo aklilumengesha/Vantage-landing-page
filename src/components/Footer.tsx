@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaFingerprint } from 'react-icons/fa';
+import { FaCrown } from 'react-icons/fa6';
 
 import { siteDetails } from '@/data/siteDetails';
 import { footerDetails } from '@/data/footer';
@@ -11,9 +11,11 @@ const Footer: React.FC = () => {
         <footer className="bg-hero-background text-foreground py-10">
             <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div>
-                    <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="min-w-fit w-5 h-5 md:w-7 md:h-7" />
-                        <h3 className="manrope text-xl font-semibold cursor-pointer">
+                    <Link href="/" className="flex items-center gap-2 group transition-transform hover:scale-105">
+                        <div className="bg-primary p-1.5 rounded-lg shadow-sm text-black group-hover:shadow-md transition-all">
+                            <FaCrown className="w-5 h-5" />
+                        </div>
+                        <h3 className="manrope text-xl font-bold tracking-tight text-foreground cursor-pointer">
                             {siteDetails.siteName}
                         </h3>
                     </Link>
@@ -34,7 +36,7 @@ const Footer: React.FC = () => {
                 <div>
                     <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
 
-                    {footerDetails.email && <a href={`mailto:${footerDetails.email}`}  className="block text-foreground-accent hover:text-foreground">Email: {footerDetails.email}</a>}
+                    {footerDetails.email && <a href={`mailto:${footerDetails.email}`} className="block text-foreground-accent hover:text-foreground">Email: {footerDetails.email}</a>}
 
                     {footerDetails.telephone && <a href={`tel:${footerDetails.telephone}`} className="block text-foreground-accent hover:text-foreground">Phone: {footerDetails.telephone}</a>}
 
