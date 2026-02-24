@@ -22,8 +22,8 @@ export const footerDetails: {
             url: "#testimonials"
         }
     ],
-    email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
+    email: 'aklilumengesha57@gmail.com',
+    telephone: '0998121942',
     socials: {
         // github: 'https://github.com',
         // x: 'https://twitter.com/x',
