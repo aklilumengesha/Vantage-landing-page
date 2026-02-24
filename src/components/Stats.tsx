@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useMotionValue, useSpring } from 'framer-motion';
 import { stats } from "@/data/stats";
+import SectionTitle from './SectionTitle';
 
 const Counter: React.FC<{ value: number; decimals?: number }> = ({ value, decimals = 0 }) => {
     const ref = useRef<HTMLSpanElement>(null);
@@ -41,6 +42,15 @@ const Stats: React.FC = () => {
             </div>
 
             <div className="container mx-auto px-5 relative z-10">
+                <div className="text-center max-w-3xl mx-auto mb-16">
+                    <SectionTitle>
+                        <h2 className="mb-4">Our Impact in Numbers</h2>
+                    </SectionTitle>
+                    <p className="text-foreground-accent text-lg">
+                        Discover how Vintage is transforming the financial landscape with secure, scalable, and trusted solutions.
+                    </p>
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {stats.map((stat, index) => (
                         <motion.div
