@@ -2,9 +2,8 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaChartLine, FaShieldHalved, FaWallet } from 'react-icons/fa6';
+import { FaChartLine, FaShieldHalved, FaWallet } from 'react-icons/fa6';
 
 import AppStoreButton from './AppStoreButton';
 import PlayStoreButton from './PlayStoreButton';
@@ -12,7 +11,7 @@ import Container from './Container';
 
 import { heroDetails } from '@/data/hero';
 
-const FloatingCard = ({ icon: Icon, title, value, delay, className }: { icon: any, title: string, value: string, delay: number, className: string }) => (
+const FloatingCard = ({ icon: Icon, title, value, delay, className }: { icon: React.ElementType, title: string, value: string, delay: number, className: string }) => (
     <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 20 }}
         animate={{

@@ -49,7 +49,7 @@ export const benefits: IBenefit[] = [
     },
     {
         title: "Bank-Grade Security",
-        description: "Your financial data deserves the best protection. Rest easy knowing Finwise employs cutting-edge security measures.",
+        description: "Your financial data deserves the best protection. Rest easy knowing Vintage employs cutting-edge security measures.",
         bullets: [
             {
                 title: "Military-Grade Encryption",
