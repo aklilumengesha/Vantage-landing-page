@@ -1,6 +1,6 @@
 export const siteDetails = {
     siteName: 'Vintage',
-    siteUrl: 'https://vintage-landing-page.vercel.app/',
+    siteUrl: typeof window !== 'undefined' ? window.location.origin : (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
     metadata: {
         title: 'Vintage - Next.js and Tailwind CSS Landing Page Template',
         description: 'Vintage empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
