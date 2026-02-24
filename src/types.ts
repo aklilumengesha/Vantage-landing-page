@@ -36,7 +36,10 @@ export interface ITestimonial {
 }
 
 export interface IStats {
-    title: string;
+    value: number;
+    decimals?: number;
+    suffix: string;
+    label: string;
     icon: JSX.Element;
     description: string;
 }

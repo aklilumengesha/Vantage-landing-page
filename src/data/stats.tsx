@@ -5,18 +5,25 @@ import { IStats } from "@/types";
 
 export const stats: IStats[] = [
     {
-        title: "20M+",
-        icon: <BsBarChartFill size={34} className="text-blue-500" />,
+        value: 20,
+        suffix: "M+",
+        label: "Transactions",
+        icon: <BsBarChartFill size={28} className="text-blue-500" />,
         description: "Transactions processed securely every day, providing real-time insights."
     },
     {
-        title: "5.0",
-        icon: <BsFillStarFill size={34} className="text-yellow-500" />,
+        value: 5.0,
+        decimals: 1,
+        suffix: "",
+        label: "Star Rating",
+        icon: <BsFillStarFill size={28} className="text-yellow-500" />,
         description: "Star rating, consistently maintained across app stores."
     },
     {
-        title: "200+ ",
-        icon: <PiGlobeFill size={34} className="text-green-600" />,
+        value: 200,
+        suffix: "+",
+        label: "Institutions",
+        icon: <PiGlobeFill size={28} className="text-green-600" />,
         description: "Financial Institutions, seamlessly integrated, so you can manage all accounts."
     }
 ];
